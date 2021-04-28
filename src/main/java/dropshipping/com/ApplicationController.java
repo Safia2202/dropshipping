@@ -9,7 +9,7 @@ public class ApplicationController {
     @Autowired
     @GetMapping("")
     public String viewHowPage(){
-        return "/homepage";}
+        return "homepage";}
 
 
 }
