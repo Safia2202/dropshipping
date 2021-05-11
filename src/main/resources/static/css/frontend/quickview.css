@@ -1,0 +1,247 @@
+
+
+.mask {
+  background-color: #000;
+  height: 10000px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+  z-index: 9998;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  display: none;
+}
+
+#quick-view-pop-up {
+  background: #fff;
+  border: 1px solid #999;
+  z-index: 9998;
+  position: fixed;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 700px;
+  width: 80%;
+  display: none;
+}
+
+.quick-view-panel {
+  z-index: 9999;
+}
+
+
+.mini-carousel,
+.carousel {
+  float: left;
+}
+
+.mini-carousel {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  float: left;
+
+  height: 390px;
+  overflow: hidden;
+  display: block;
+
+  position: relative;
+  top: 0px;
+}
+
+.mini-carousel ul {
+  float: left;
+  width: 120px;
+  display: block;
+  top: 0;
+  position: relative;
+}
+
+.mini-carousel ul li {
+  float: left;
+  margin-bottom: 10px;
+  width: 97px;
+  height: 115px;
+  padding-top: 15px;
+  top: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.carousel {
+  float: left;
+  position: relative;
+
+  top: 16px;
+  padding-left: 5px;
+  display: block;
+}
+
+.image-large {
+  float: left;
+  top: 10px;
+  width: 300px;
+  overflow: hidden;
+  display: block;
+  left: 0;
+}
+
+.image-large ul {
+  margin: 0 0 0 0;
+  list-style: none;
+  width: 1180px;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel ul li {
+  float: left;
+  margin: 0;
+}
+
+.video-player {
+  width: 290px;
+  height: 370px;
+  display: none;
+  position: absolute;
+  top: 10px;
+}
+.video-player iframe {
+  display: block;
+  float: left;
+  margin-left: 50px;
+}
+
+a i.backward {
+  position: absolute;
+  top: 170px;
+  left: 35px;
+  height: 35px;
+  width: 36px;
+}
+
+a i.toup {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  height: 35px;
+  width: 36px;
+}
+a i.todown {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  display: block;
+  height: 35px;
+  width: 36px;
+}
+
+a i.forward {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.quick-view-close {
+  opacity: 1;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
+  background-repeat: no-repeat;
+  height: 24px;
+  background-position-x: -78px;
+}
+
+.quick-view-video {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  height: 26px;
+  width: 90px;
+}
+.detail {
+  width: 315px;
+  float: left;
+  margin: 40px 31px 40px 31px;
+}
+.product-details {
+  margin-bottom: 20px;
+  float: left;
+}
+.product-name {
+  margin-bottom: 10px;
+}
+.product-price {
+  margin-bottom: 10px;
+}
+.colour-dropdown,
+.quantity-dropdown,
+.size-dropdown {
+  margin-top: 10px;
+}
+.orange {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  float: right;
+  background-color: #d35400;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.green {
+  margin-top: 10px;
+  float: left;
+
+  padding: 5px;
+  width: 100%;
+
+  background-color: green;
+  margin-left: auto;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.option-dropdowns {
+  margin: 10px;
+  float: left;
+}
+.buttons-popup {
+  margin-bottom: 10px;
+}
+a.view-more-detail {
+  margin-top: 10px;
+  margin-left: auto;
+  width: 100%;
+  padding: 5px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  background-color: #356890;
+  text-transform: uppercase;
+}
+.red {
+  margin-top: 10px;
+  margin-left: auto;
+  float: left;
+  width: 100%;
+  padding: 5px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}

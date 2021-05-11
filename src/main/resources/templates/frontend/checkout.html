@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="frontend/header.html :: myheader">
+
+</head>
+<body>
+
+<div th:replace="frontend/mynav.html :: mynavi"></div>
+
+
+<div class="panel-infor"> <h6>function for path</h6>
+</div>
+<div class="main-cart-flex">
+    <div class="column-45">
+        <div class=" box-payment">
+            <h5> Information</h5>
+            <div class="box-checkout">
+                <div class="row-check">
+                    <div class="cart-2 sml">Contact</div>
+                    <div class="cart-7 sml">dasda@gmail.com</div>
+                    <div class="cart-1 sml"><a  style="text-decoration:none;" href="#">change</a></div>
+                </div>
+
+
+                <hr>
+                <div class="row-check">
+                <div class="cart-2 sml">Ship to</div>
+                <div class="cart-7 sml">daefe , 2710051, Iwate dfdad dfd, Japan daefe , 2710051, Iwate dfdad dfd, Japan</div>
+                <div   class="cart-1 sml"><a style="text-decoration:none;" href="#">change</a></div>
+             </div>
+            </div>
+        </div>
+        <div class=" box-payment">
+            <h5> Shipping Method</h5>
+            <div class="box-checkout">
+                <div class="row-check">
+                    <div class="cart-9">
+                        <label style="font-size:17px" class="check-container"><a style="text-decoration:none;" href="#">Standard shipping (Arrived 5-7days)</a>
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+
+                    <div class="cart-1 ">¥2100</div>
+                </div>
+                <hr>
+                <div class="row-check">
+                    <div class="cart-9 sml">
+                        <label style="font-size:17px" class="check-container"><a style="text-decoration:none;" href="#">Fast shipping (Arrived 2-3days)</a>
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                    <div class="cart-1  sml">¥2100</div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="row-check">
+            <button type="submit" class="check-out">Payment</button>
+            <button type="submit" class="check-out">Return</button>
+        </div>
+    </div>
+    <div class="column-45 cl45 border45"  >
+        <div class="row-check">
+            <div class="cart-2 sml">
+                <img src="images/grid4.jpg">
+                <div class=" small-quantity ">10</div>
+            </div>
+            <div class="cart-7 sml">
+                <div class="cart-7-holder">
+                    <h6>mountain hat</h6>
+                    <p> 10 pcs x ¥120</p>
+                </div>
+            </div>
+            <div class="cart-1 sml">¥1200</a></div>
+
+        </div>
+        <hr>
+        <div class="row-check">
+            <div class="cart-2 sml">
+                <img src="images/grid4.jpg">
+                <div class=" small-quantity ">10</div>
+            </div>
+            <div class="cart-7 sml">
+                <div class="cart-7-holder">
+                    <h6>mountain hat</h6>
+                    <p> 10 pcs x ¥120</p>
+                </div>
+            </div>
+            <div class="cart-1 sml">¥1200</a></div>
+
+        </div>
+        <hr>
+
+
+        <div class="row-check">
+            <div class="cart-9 sml"> Subtotal</div>
+            <div class="cart-1 sml">¥1200</a></div>
+
+        </div>
+        <hr>
+        <div class="row-check">
+            <div class="cart-9 sml "> Gift wrap</div>
+            <div class="cart-1 sml">¥0</a></div>
+
+        </div>
+        <div class="row-check">
+            <div class="cart-9 sml"> Discount code</div>
+            <div class="cart-1 sml">¥0</a></div>
+
+        </div>
+
+        <div class="row-check">
+            <div class="cart-9 sml"> Shipping fee</div>
+            <div class="cart-1 sml">¥1200</a></div>
+
+        </div>
+        <hr>
+        <div class="row-check">
+            <div class="cart-9 sml"><strong>Total</strong> </div>
+            <div class="cart-1 sml"><strong>¥2000</strong></a></div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer th:replace="frontend/footer.html:: myfooter"></footer>
+</body>
+
+</html>

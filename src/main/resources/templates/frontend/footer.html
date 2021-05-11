@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<footer th:fragment="myfooter">
+    <div class="left">
+        <h3>BeBop Store Website</h3>
+        <p>It's never too late to become who you  should be.</p>
+        <p>All rights reserved.</p>
+        <button class="main__btn">get in touch</button>
+    </div>
+    <div class="right">
+        <div class="footer__column">
+            <h4>Discover</h4>
+            <ul>
+                <li><a href="#/">Pricing</a></li>
+                <li><a href="#/">Corporate</a></li>
+                <li><a href="#/">Updates</a></li>
+                <li><a href="#/">Subscribers</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h4>Pages</h4>
+            <ul>
+                <li><a href="#/">Travel</a></li>
+                <li><a href="#/">Food</a></li>
+                <li><a href="#/">Recipes</a></li>
+                <li><a href="#/">Blog</a></li>
+                <li><a href="#/">About</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#/">Help</a></li>
+                <li><a href="#/">Documentation</a></li>
+                <li><a href="#/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="back-to-top">
+        <button id="back-to-top" onclick="topFunction()"  class="btn btn-dark" title="Back to Top" style="display: block;">
+            <i class="fa fa-angle-up"></i>
+        </button>
+    </div>
+
+    <button class="chatbox-open" id="chatbox-open">
+        <i class="fa fa-comment fa-2x" aria-hidden="true"></i></button>
+    <button class="chatbox-close"id="chatbox-close">
+        <i class="fa fa-close fa-2x" aria-hidden="true"></i>
+    </button>
+    <section class="chatbox-popup">
+        <div class="chatbox-popup__header">
+            <aside style="flex:3">
+                <i class="fa fa-user-circle fa-3x chatbox-popup__avatar" aria-hidden="true"></i>
+            </aside>
+            <aside style="flex:8">
+                <h2>Safia</h2> Please leave me an message
+            </aside>
+            <aside class="footer-logo">
+                <img src="logo1.svg" alt="logo">
+            </aside>
+        </div>
+        <main class="chatbox-popup__main">
+            <p>Ask us anything. <br>Please leave us a message by <a href="#contact" style="color:black">contact form.</a><br>Coming soon function...</p>
+        </main>
+        <div class="chatbox-popup__footer">
+            <aside style="flex:1;color:#888;text-align:center;">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+            </aside>
+            <aside style="flex:10;">
+                <textarea style="width:100%;color:#888;text-align:center;" type="text" placeholder="Type your message here..." autofocus></textarea>
+            </aside>
+            <aside style="flex:1;color:#888;text-align:center;">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </aside>
+
+        </div>
+    </section>
+
+</footer>
+
+
+
+</body>
+</html>

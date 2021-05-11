@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="frontend/header.html :: myheader">
+
+</head>
+<body>
+<div th:replace="frontend/mynav.html :: mynavi"></div>
+<div th:replace="frontend/index.html :: best-seller"></div>
+
+<div class="detail-view" >
+    <div class="catalogues">
+        <ul>
+            <li><a href="#" >Cloths</a></li>
+            <li><a href="#" >Cloths</a></li>
+            <li><a href="#" >Cloths</a></li>
+            <li><a href="#" >Cloths</a></li>
+            <li><a href="#" >Cloths</a></li>
+        </ul>
+
+
+    </div>
+    <div class=" main-view">
+        <div class="main-view-part">
+            <div class="view-carousel">
+                <div class="panel-icon ">
+                    <a href="#"><i class="detail-up fa fa-angle-double-up" style="font-size:20px"></i></a>
+                </div>
+
+                <ul >
+
+                    <li><a href="#" title="Image1-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/white/image1s.jpg" alt="Product"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                    <li><a href="#" title="Image3-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image3s.jpg" alt="image3-small"></a></li>
+                    <li><a href="#" title="Image4-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image4s.jpg" alt="image4-small"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                    <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+                </ul>
+
+                <div class="panel-icon-down ">
+
+                    <a href="#"><i class="detail-down fa fa-angle-double-down" style="font-size:20px"></i></a>
+
+                </div>
+
+            </div>
+            <div class="carousel-max">
+
+                <div class="image-large-max">
+                    <ul>
+                        <li><img style ="height:500px; width:100%" src="images/grid1.jpg"></li>
+                        <li><img style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2xl.jpg"></li>
+                        <li><img  style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image3xl.jpg"></li>
+                        <li><img style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image4xl.jpg"></li>
+                    </ul>
+                    <button><i class="backward-large fa fa-angle-double-left" style="font-size:20px"></i></button>
+
+                    <button> <i class="forward-large fa fa-angle-double-right" style="font-size:20px"></i></button>
+                    <button> <i class="expand-icon fas fa-expand-arrows-alt" ></i></button>
+                    <button> <i class="video-icon fas fa-video" ></i></button>
+
+                    <button> <i  class="fas fa-heart fa-3x" style="font-size:0.85rem;"></i></button>
+                </div>
+
+
+            </div>
+            <div class="detail-large">
+                <div class="product-details">
+                    <h3 class="product-name" style="text-align:justify;">ASOS Slim Fit T-Shirt With Crew Neck</h3>
+                    <div class="discount">
+                        <h4 class="product-price"><strong>$10.50</strong></h4>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                          <i class="fa fa-certificate fa-2x" style="color:red; position:absolute;"></i>
+                          <i class="fa fa-1x fa-tag fa-inverse" style="color:white;position:absolute;padding:1px 8px"></i>
+                        </span> &nbsp; 97% Discount
+                    </div>
+                    <div class="ratting">User Rating &nbsp; &nbsp;
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> &nbsp;<a href="#">(1 review)</a>
+
+
+                    </div>
+
+                    <p style="padding:10px 0;text-align:justify; margin-bottom:0">Perfect for pairing with denim and white kicks for a stylish sporty vibe.Go sporty this summer with this vintage navy and white striped v-neck t-shirt from the Nike. Perfect for pairing with denim and white kicks for a stylish sporty vibe.</p>
+                    <p style="margin-bottom:0px;"> Size: </p>
+                    <select class="size-dropdown" data-bind="options: sizes, optionsText: 'Text', value: selectedSize, enable: sizeDropDownEnabled, visible: displaySizeDropDown" style="">
+                        <option value="">Select Size</option><option value="">XXXS </option><option value="">XXS"</option><option value="">XS"</option><option value="">S "</option><option value="">M "</option><option value="">L - Chest"</option><option value="">XL - Chest "</option><option value="">XXL - Chest "</option><option value="">XXXL - Chest " </option></select>
+
+
+
+                    <p style="margin-bottom:0px;"> Color: </p>
+                    <div class="color-pad1">
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+
+
+
+
+                    </div>
+                    <div class="color-pad1">
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+                        <img src="images/grid1.jpg" style="width:50px;height:60px;margin:4px" >
+
+                    </div>
+
+
+                    <div class="cart">
+                        <button type="button" class="adjust-quantity">
+                            <i style="padding:5px;flex:2;color:black
+                            ;text-align:center;" class="fas fa-minus"></i>
+                            <p style="display:inline-block; margin-bottom:0;padding-top:5px; flex:2;color:black;text-align:center;" > 3 </p>
+                            <i style="padding:5px;flex:2;color:black;text-align:center;"  class="fas fa-plus"></i>
+
+                        </button>
+                        <button type="button"  style="background-color:orange;" class="add-to-cart">
+                            Add to cart
+                        </button>
+                        <button type="button"  class="add-to-cart">
+                            Buy now
+                        </button>
+
+                    </div>
+                    <img src="/images/pay.png" style="width:100%;">
+                    <div class="more-text">
+                        <p>Delivery, Return </p>
+                        <p> Ask question</p>
+
+                    </div>
+                    <p style="margin-top:5px ;margin-bottom:0px;"> SKU: </p>
+                    <p style="margin-top:5px;margin-bottom:0px"> Catalogue: </p>
+                    <p style="margin-top:5px; margin-bottom:0px"> Tag: </p>
+
+                    <div class="panel-link" >
+                        <a href="#" ><i  class="fab fa-facebook-f" style="font-size:20px"></i></a>
+                        <a href="#" ><i class="fab fa-twitter" style="font-size:20px"></i></a>
+                        <a href="#" ><i class="fab fa-facebook-messenger" style="font-size:20px"></i></a>
+                        <a href="#" ><i class="fab fa-pinterest" style="font-size:20px"></i></a>
+                        <a href="#" ><i class="fa fa-envelope" aria-hidden="true" style="font-size:20px"></i></a>
+                        <a href="#" ><i class="fas fa-plus" style="font-size:20px"></i></a>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main-view-part-detail">
+            <h2 class="section__description" style="margin-bottom:30px;">Product Detail</h2>
+            <div class="operations">
+                <div class="operations__tab-container">
+                    <button style="background-color:yellow"
+                            class="btn operations__tab operations__tab--1 operations__tab--active"
+                             data-tab="1">
+                        <span>01</span>descriptions
+                    </button>
+                    <button style="background-color:red" class="btn operations__tab operations__tab--2" data-tab="2">
+                        <span>02</span> reviews
+                    </button>
+                    <button style="background-color:blue" class="btn operations__tab operations__tab--3" data-tab="3">
+                        <span>03</span>details
+                    </button>
+                </div>
+                <div class="operations__content operations__content--1 operations__content--active">
+                    <div class="over-view">
+                        <h6> this iss</h6>
+                        <img style="width:90%" class="center" src="/images/slide1.jpg">
+                    </div>
+
+                </div>
+
+                <div class="operations__content operations__content--2" style="font-size:0.7rem">
+                    <div class="over-view">
+                        <span class="fa fa-star fa-2x checked" style="width:10px;"></span>
+                        <span class="fa fa-star fa-2x checked" style="width:10px;"></span>
+                        <span class="fa fa-star  fa-2x checked" style="width:10px;"></span>
+                        <span class="fa fa-star fa-2x checked" style="width:10px;"></span>
+                        <span class="fa fa-star fa-2x" style="width:10px;"></span>
+                        <p style="margin-bottom:0px;font-size:15px;">4.1 average based on 254 reviews.</p>
+
+                        <div class="row" style="width:60%">
+                            <div class="side" style="font-size:15px">
+                                <p style="margin-bottom:0px;font-size:15px;">5 star</p>&nbsp;&nbsp;
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom:0px;font-size:15px;float:right;">150</p>
+                            </div>
+                            <div class="side" style="font-size:15px">
+                                <p style="margin-bottom:0px;font-size:15px;">5 star</p>&nbsp;&nbsp;
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom:0px;font-size:15px;float:right;">150</p>
+                            </div>
+                            <div class="side" style="font-size:15px">
+                                <p style="margin-bottom:0px;font-size:15px;">5 star</p>&nbsp;&nbsp;
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom:0px;font-size:15px;float:right;">150</p>
+                            </div>
+                            <div class="side" style="font-size:15px">
+                                <p style="margin-bottom:0px;font-size:15px;">5 star</p>&nbsp;&nbsp;
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom:0px;font-size:15px;float:right;">150</p>
+                            </div>
+                            <div class="side" style="font-size:15px">
+                                <p style="margin-bottom:0px;font-size:15px;">5 star</p>&nbsp;&nbsp;
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom:0px;font-size:15px;float:right;">150</p>
+                            </div>
+                            <div class="side" style="font-size:15px">
+                                <p style="margin-bottom:0px;font-size:15px;">5 star</p>&nbsp;&nbsp;
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom:0px;font-size:15px;float:right;">150</p>
+                            </div>
+
+
+                        </div>
+                        <div class="reviews-detail">
+                            <div class="review-detail">
+                                <div class="user">
+                                    <p style="margin:20px; font-size:13px;">safia</p>
+                                    <div class="user-icon"></div>
+                                </div>
+                                <div class="review-main">
+                                    <div class="review-star">
+                                        <span class="fa fa-star fa-1x checked" style="width:10px;"></span>
+                                        <span class="fa fa-star checked" style="width:10px;"></span>
+                                        <span class="fa fa-star checked" style="width:10px;"></span>
+                                        <span class="fa fa-star checked" style="width:10px;"></span>
+                                        <span class="fa fa-star" style="width:10px;"></span>
+
+                                    </div>
+                                    <div class="product-name-review">
+                                        <p style="margin-bottom:0px;"> color: </p> &nbsp;&nbsp;
+                                        <p style="margin-bottom:0px;"> Special Feature: </p>
+
+                                    </div>
+                                    <div class="review-text">It looks all very good quality but when playing the videos it pixelea a little we'll see how it behaves in reality.It looks all very good quality but when playing the videos it pixelea a little we'll see how it behaves in reality
+                                    </div>
+                                    <div class="time-show"> 2021/2/4</div>
+                                    <div class="review-footer">
+                                        <div class="picture-show">
+                                            <div class="picture-show-contain">
+                                                <img style="width:70px;height:50px" src="images/grid10.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="helpfull">
+                                            <p class="margin-bottom=0px;"> Helpfull?</p>
+                                            <button >yes</button>
+                                            <button >no</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="hr-style">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="operations__content operations__content--3">
+                    <div class="double-column">
+                        <ul>
+                            <li>model: </li>
+                            <li>model: </li>
+                            <li>model: </li>
+                            <li>model: </li>
+                        </ul>
+                    </div>
+
+                    <div class="double-column">
+                        <ul>
+                            <li>model: </li>
+                            <li>model: </li>
+                            <li>model: </li>
+                            <li>model: </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="main-grid" style="margin:40px 10px;">
+            <h5 style="text-align:center;text-transform:uppercase; padding: 20px;"> Related Items</h5>
+            <div class="main-view-grid">
+
+                <div th:replace="frontend/card.html::card"></div>
+                <div th:replace="frontend/card.html::card"></div>
+                <div th:replace="frontend/card.html::card"></div>
+                <div th:replace="frontend/card.html::card"></div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="left-rec">
+        <div th:insert="frontend/card.html::card"></div>
+        <div th:insert="frontend/card.html::card"></div>
+
+
+    </div>
+</div>
+
+
+<footer th:replace="frontend/footer.html :: myfooter"></footer>
+
+
+</body>
+</html>

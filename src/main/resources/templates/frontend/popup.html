@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div class="mask" th:fragment="mask"></div>
+
+<div id="quick-view-pop-up" th:fragment="popup">
+    <div class="quick-view-panel">
+        <div class="quick-view-close"></div>
+    </div>
+    <div class="view-carousel">
+        <div class="panel-icon ">
+            <a href="#"><i class="detail-up fa fa-angle-double-up" style="font-size:20px"></i></a>
+        </div>
+
+        <ul >
+
+            <li><a href="#" title="Image1-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/white/image1s.jpg" alt="Product"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image3-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image3s.jpg" alt="image3-small"></a></li>
+            <li><a href="#" title="Image4-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image4s.jpg" alt="image4-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+        </ul>
+
+        <div class="panel-icon-down ">
+
+            <a href="#"><i class="detail-down fa fa-angle-double-down" style="font-size:20px"></i></a>
+
+        </div>
+
+    </div>
+    <div class="carousel-max">
+
+        <div class="image-large-max">
+            <ul>
+                <li><img style ="height:500px; width:100%" src="images/grid1.jpg"></li>
+                <li><img style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2xl.jpg"></li>
+                <li><img  style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image3xl.jpg"></li>
+                <li><img style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image4xl.jpg"></li>
+            </ul>
+            <button><i class="backward-large fa fa-angle-double-left" style="font-size:20px"></i></button>
+
+            <button> <i class="forward-large fa fa-angle-double-right" style="font-size:20px"></i></button>
+            <button> <i class="expand-icon fas fa-expand-arrows-alt" ></i></button>
+            <button> <i class="video-icon fas fa-video" ></i></button>
+
+            <button> <i  class="fas fa-heart fa-3x" style="font-size:0.85rem;"></i></button>
+        </div>
+
+
+    </div>
+    <div class="detail-large">
+        <div class="product-details">
+            <h5 class="product-name" style="text-align:justify;">ASOS Slim Fit T-Shirt With Crew Neck</h5>
+            <div class="discount">
+                <h4 class="product-price"><strong>$10.50</strong></h4>&nbsp;
+                <span class="fa-stack fa-lg" style="font-size:1rem;">
+                          <i class="fa fa-certificate fa-2x" style="color:red; position:absolute;"></i>
+                          <i class="fa fa-1x fa-tag fa-inverse" style="color:white;position:absolute;padding:1px 8px"></i>
+                        </span> &nbsp; 97% Discount
+            </div>
+            <div class="ratting">User Rating &nbsp; &nbsp;
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> &nbsp;<a href="#">(1 review)</a>
+
+
+            </div>
+
+            <p style="padding:10px 0;text-align:justify; margin-bottom:0">Perfect for pairing with denim and white kicks for a stylish sporty vibe.</p>
+            <p style="margin-bottom:0px;"> Size: </p>
+            <select class="size-dropdown" data-bind="options: sizes, optionsText: 'Text', value: selectedSize, enable: sizeDropDownEnabled, visible: displaySizeDropDown" style="">
+                <option value="">Select Size</option><option value="">XXXS </option><option value="">XXS"</option><option value="">XS"</option><option value="">S "</option><option value="">M "</option><option value="">L - Chest"</option><option value="">XL - Chest "</option><option value="">XXL - Chest "</option><option value="">XXXL - Chest " </option></select>
+
+
+
+            <p style="margin-bottom:0px;"> Color: </p>
+            <div class="color-pad1">
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+
+
+
+
+            </div>
+            <div class="color-pad1">
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+                <img src="images/grid1.jpg" style="width:40px;height:50px;margin:4px" >
+
+
+            </div>
+
+
+            <div class="cart">
+                <button type="button" class="adjust-quantity">
+                    <i style="padding:5px;flex:2;color:black
+                            ;text-align:center;" class="fas fa-minus"></i>
+                    <p style="display:inline-block; margin-bottom:0;padding-top:5px; flex:2;color:black;text-align:center;" > 3 </p>
+                    <i style="padding:5px;flex:2;color:black;text-align:center;"  class="fas fa-plus"></i>
+
+                </button>
+                <button type="button"  style="background-color:orange;" class="add-to-cart">
+                    Add to cart
+                </button>
+                <button type="button"  class="add-to-cart">
+                    Buy now
+                </button>
+
+            </div>
+            <img src="/images/frontend/pay.png" style="width:80%;">
+            <div class="more-text">
+                <p>Delivery, Return </p>
+                <p> Ask question</p>
+
+            </div>
+            <p style="margin-top:5px ;margin-bottom:0px;"> SKU: </p>
+            <p style="margin-top:5px;margin-bottom:0px"> Catalogue: </p>
+            <p style="margin-top:5px; margin-bottom:0px"> Tag: </p>
+
+            <div class="panel-link" >
+                <a href="#" ><i  class="fab fa-facebook-f" style="font-size:20px"></i></a>
+                <a href="#" ><i class="fab fa-twitter" style="font-size:20px"></i></a>
+                <a href="#" ><i class="fab fa-facebook-messenger" style="font-size:20px"></i></a>
+                <a href="#" ><i class="fab fa-pinterest" style="font-size:20px"></i></a>
+                <a href="#" ><i class="fa fa-envelope" aria-hidden="true" style="font-size:20px"></i></a>
+                <a href="#" ><i class="fas fa-plus" style="font-size:20px"></i></a>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

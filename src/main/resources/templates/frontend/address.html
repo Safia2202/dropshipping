@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="header :: myheader">
+
+</head>
+<body>
+
+<div th:replace="mynav :: mynavi"></div>
+
+
+<div class="main-cart">
+    <div class="panel-infor"> function for path
+    </div>
+    <div class="column-5">
+
+        <div class="info-bar">
+            <h3>Contact information</h3>
+            <div class="info-right">
+
+                <h6>Already have account?</h6>
+                <a href="#">login</a> or
+                <a href="#" >Sign Up</a>
+            </div>
+        </div>
+        <form class="info-cover">
+            <input id="email" type="email" placeholder="Input your Email" required>
+            <input  style ="margin-left:322px;" type="checkbox" id="update" name="term">
+            <label style ="float:right" for="update"> Keep me up to date on news and exclusive offers</label>
+
+        </form>
+        <div class="info-bar">Shipping address</div>
+        <form class="info-cover">
+            <input id="lastname" type="text" placeholder="Input your Last Name" required>
+            <input id="firstname" type="text" placeholder="Input your First Name (optional)" optional>
+            <select  class="form-country" id="province" name="province">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+            </select>
+            <input class="form-country" id=zipcode type="text" name="zipcode" placeholder ="Postal/Zip Code" value="Postal/Zip Code">
+            <button class="check-zip">Check</button>
+            <select  class="form-country" id="province" name="province">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+            </select>
+            <input required class="form-country" id="city" type="text" name="city" placeholder ="City/ward/town/village" value="city">
+            <input required class="form-country" id="bulding" type="text" name="bulding" placeholder ="Bulding Name, Room number"
+                   value="bulding">
+            <input  style ="margin-left:322px;" type="checkbox" id="save-inf" name="term">
+            <label style ="float:right" for="save-inf"> Save this information for next time</label>
+            <a href="#">Change</a>
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+
+<footer th:replace="footer :: myfooter"></footer>
+</body>
+
+</html>

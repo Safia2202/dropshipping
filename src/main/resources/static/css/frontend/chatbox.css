@@ -37,6 +37,8 @@ button.chatbox-open {
   z-index: 999;
 }
 
+
+
 button.chatbox-close {
   position: fixed;
   bottom: 0;
@@ -96,7 +98,7 @@ textarea::placeholder {
   width: 100%;
   padding: 16px;
   color: #fff;
-  background-image: #000;
+  background-color: navy;
   align-items: center;
   justify-content: space-around;
   border-top-right-radius: 12px;
@@ -127,4 +129,4 @@ textarea::placeholder {
   justify-content: space-around;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-}
+

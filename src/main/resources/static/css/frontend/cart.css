@@ -1,0 +1,153 @@
+.main-cart{
+margin:80px;}
+
+
+.row-cart{
+display:flex;
+margin:10 20pxx;
+padding:10px;}
+
+.cart-6{
+width:60%;
+display:flex;}
+
+.cart-4{
+width:40%;
+display:flex;}
+
+.cart-2,
+.cart-2-quantity{
+width:20%;
+display:flex;}
+
+.cart-2 img{
+width:60px;
+height:80px;
+position:relative;}
+
+.cart-2 i{
+margin-left:10px;
+margin-top: 53px;}
+
+.cart-8{
+width:85%;
+display:flex;}
+
+del{
+color:red;
+margin-left:20px}
+
+.sub-inf{
+margin:20px 0px;
+padding:20px 20px;
+display:flex;}
+
+.column-5{
+width:50%;
+
+}
+
+.gift-wrap button{
+border-radius:20px;
+padding:3px 10px;
+margin-left:50px;
+background-color: red;
+}
+
+textarea{
+width:90%;
+height:60px;
+margin:10px}
+
+.input-coupon{
+margin:10px;
+border:1px solid navy;}
+.check-box{
+float:right;}
+
+.check-out{
+width :35%;
+border-radius:20px;
+padding:5px 10px;
+ float:right;
+ background-color:#56cfe1;
+ border:none;
+ color:#fff;
+ margin:10px}
+
+ .pay-cart{
+ width:100%;
+ }
+.estimate-wrapper{
+ margin:0px;
+ border:2px solid #56cfe1;}
+
+
+ .estimate-address{
+ display:flex;
+ padding:10px;
+
+
+ }
+ .column-3{
+ width:23%;
+ margin:10px;
+ }
+.form-country{
+ width :80%;
+ border-radius:20px;
+ padding:5px 10px;
+  border:1px solid;
+  margin:20px 0px;}
+
+
+.estimate-bnt{
+width :15%;
+border-radius:20px;
+padding:5px 10px;
+ background-color:#56cfe1;
+ border:none;
+ color:#fff;
+ margin:50px 20px;
+}
+
+.estimate-text{
+margin-left:45%;
+transform: translateY(-66%);
+background-color:#fff;
+border:none;
+padding:10px;
+}
+
+.check-term{
+display:flex;
+width:100%;
+height:60px;
+background-color:orange;
+padding:20px 20px 20px 0px;
+position:relative;
+}
+.fa-times-circle{
+position:absolute;
+right:0px;
+top:0px;}
+
+.fa-exclamation-triangle{
+position:absolute;
+margin-left:5px;
+margin-right:5px;}
+.check-term h6{
+position:absolute;
+margin-left:25px;
+}
+
+.card-cart{
+margin: 20px 0px;
+width:100%;
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+grid-template-rows: repeat(auto-fit, minmax(280px, 1fr);
+grid-gap: 0.5rem;
+}
+
+

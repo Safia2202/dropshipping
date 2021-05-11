@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div class="mask" th:fragment="mask"></div>
+
+<div id="quick-view-pop-up" th:fragment="popup">
+    <div class="quick-view-panel">
+        <div class="quick-view-close"></div>
+    </div>
+    <div class="view-carousel">
+        <div class="panel-icon ">
+            <a href="#"><i class="detail-up fa fa-angle-double-up" style="font-size:20px"></i></a>
+        </div>
+
+        <ul >
+
+            <li><a href="#" title="Image1-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/white/image1s.jpg" alt="Product"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image3-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image3s.jpg" alt="image3-small"></a></li>
+            <li><a href="#" title="Image4-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image4s.jpg" alt="image4-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+            <li><a href="#" title="Image2-Small"><img src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2s.jpg" alt="image2-small"></a></li>
+        </ul>
+
+        <div class="panel-icon-down ">
+
+            <a href="#"><i class="detail-down fa fa-angle-double-down" style="font-size:20px"></i></a>
+
+        </div>
+
+    </div>
+    <div class="carousel-max">
+
+        <div class="image-large-max">
+            <ul>
+                <li><img style ="height:500px; width:100%" src="images/grid1.jpg"></li>
+                <li><img style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image2xl.jpg"></li>
+                <li><img  style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image3xl.jpg"></li>
+                <li><img style ="height:500px; width:100%" src="http://images.asos-media.com/inv/media/0/7/0/6/4176070/image4xl.jpg"></li>
+            </ul>
+            <button><i class="backward-large fa fa-angle-double-left" style="font-size:20px"></i></button>
+
+            <button> <i class="forward-large fa fa-angle-double-right" style="font-size:20px"></i></button>
+            <button> <i class="expand-icon fas fa-expand-arrows-alt" ></i></button>
+            <button> <i class="video-icon fas fa-video" ></i></button>
+
+            <button> <i  class="fas fa-heart fa-3x" style="font-size:0.85rem;"></i></button>
+        </div>
+
+
+    </div>
+    <div class="detail">
+        <div class="product-details">
+            <h3 class="product-name">ASOS Slim Fit T-Shirt With Crew Neck</h3>
+            <h2 class="product-price"><strong>$10.50</strong></h2>
+            <div class="option-dropdowns">
+                <select class="colour-dropdown" data-bind="visible: !hasColourSwatch(), options: sizeColours, optionsText: 'Text', value: selectedSizeColour, enable: colourDropDownEnabled">
+                    <option value="">Seclect Color</option>
+                    <option value="">white</option>
+                    <option value="">grey</option>
+                </select>
+
+                <div id="colourSwatchLabel" data-bind="if: hasColourSwatch()"></div>
+                <div id="quickViewSwatch" class="colour-swatch" data-swatchlabelselector="#colourSwatchLabel > span" data-bind="if: hasColourSwatch()"></div>
+                <div class="select-size-text" data-bind="if: hasColourSwatch() &amp;&amp; displaySizeDropDown"></div>
+                <select class="size-dropdown" data-bind="options: sizes, optionsText: 'Text', value: selectedSize, enable: sizeDropDownEnabled, visible: displaySizeDropDown" style="">
+                    <option value="">Select Size</option><option value="">XXXS </option><option value="">XXS"</option><option value="">XS"</option><option value="">S "</option><option value="">M "</option><option value="">L - Chest"</option><option value="">XL - Chest "</option><option value="">XXL - Chest "</option><option value="">XXXL - Chest " </option></select>
+
+                <select class="quantity-dropdown" data-bind="options: quantity, optionsText: 'Number', value: selectedQuanity, enable: QuantityDropDownEnabled, visible: displayQuantityDropDown" style="">
+                    <option value="">Select Quantity</option><option value="">1</option><option value="">2</option><option value="">3</option><option value="">4</option><option value="">5</option><option><option value="">6</option><option><option value="">7</option><option><option value="">8</option><option><option value="">9</option><option><option value="">10</option>
+                </select>
+            </div>
+
+            <a href="#" class="view-more-detail">View More Details</a>
+            <a href="#add-to-bag" class=" orange add-to-bag" data-bind="event:{click: addToBag, touchstart:addToBag}"> Add to cart </a>
+
+            <a href="#save-for-later" class=" green  save-for-later" data-bind="event:{click: saveForLater, touchstart:saveForLater}">Save for later</a>
+            <a href="#save-for-later" class=" red save-for-later">
+                Watch video
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

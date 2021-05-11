@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="frontend/header.html :: myheader">
+
+ 
+</head>
+ 
+
+<body>
+    <div th:replace="frontend/mynav.html :: mynavi">
+
+    </div>
+    
+
+    <div class="slider">
+        <div class="slide active">
+            <div class="slide__text">
+                <h1>New Product</h1>
+                <p>bllllllla bla</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__text">
+                <h1>Best Seller</h1>
+                <p>blalaaaaaaa</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide__text">
+                <h1>Most Popular</h1>
+                <p>blalalalal</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+    </div>
+    <div id ="best-seller" th:fragment="best-seller">
+        <p> Today deal sale off 70%. End in <span style ="font-size:20px"> count down</span> <a href="#">&nbsp;SHOP NOW</a></p>
+    </div>
+    
+    <section class="item__break" >
+            <h1> HOT ITEMS</h1>
+            <p style="font-style: italic">Top sale in this week</p>
+
+
+        <div id="gallery">
+            <div class="grid__gallery">
+                <div class="img__gallery" id="img1">
+                    <img src="images/frontend/grid1.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+
+                </div>
+                <div class="img__gallery" id="img2">
+                    <img src=" images/frontend/grid2.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+                <div class="img__gallery" id="img3">
+                    <img src="images/frontend/grid3.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img4">
+                    <img src="images/frontend/grid4.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img5">
+                    <img src="images/frontend/grid5.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img6">
+                    <img src="images/frontend/grid6.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img7">
+                    <img src="images/frontend/grid7.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img8">
+                    <img src="images/frontend/grid8.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img9">
+                    <img src="images/frontend/grid9.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="img__gallery" id="img10">
+                    <img src="images/frontend/grid10.jpg">
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="load__more">
+            <button> LOAD MORE</button>
+        </div>
+    </section>
+    <div th:insert="frontend/popup.html::mask"></div>
+
+    <div th:insert="frontend/popup.html::popup"></div>
+
+
+    <section class="item__break" >
+        <h1> JUST ARRIVAL</h1>
+        <p style="font-style: italic">Just Arrival in this week</p>
+        <div class="card__holder" >
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load__more">
+            <button> LOAD MORE</button>
+        </div>
+
+    </section>
+
+    <section class="item__break" >
+        <h1> Flash Sale</h1>
+        <p style="font-style: italic">Top view in this week</p>
+        <div class="card__holder" >
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load__more">
+            <button> LOAD MORE</button>
+        </div>
+
+    </section>
+
+    <section class="item__break" >
+        <h1> JUST ARRIVAL</h1>
+        <p style="font-style: italic">Just Arrival in this week</p>
+        <div class="card__holder" >
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card"  style="margin-bottom:20px">
+                <div class="img__gallery" id="arrive2">
+                    <img  src="images/frontend/grid8.jpg">
+                    <div class="discount">
+                        <p class="product-price" style="margin-top:15px; margin-right:30%"><strong>¥1010.50~</strong></p>&nbsp;
+                        <span class="fa-stack fa-lg" style="font-size:1rem;">
+                                  <i class="fa fa-certificate fa-2x" style="margin-top:5px;color:red; position:absolute;"></i>
+                                  <i class="fa fa-1x fa-tag fa-inverse" style="margin-top:5px;color:white;position:absolute;padding:1px 8px"></i>
+                            </span> &nbsp;&nbsp;
+                        &nbsp;<p style="margin-top:15px;margin-bottom:0px;">-97% </p>
+                    </div>
+
+
+                    <div class="overlay">
+                        <button class="quick_view">Quick View</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load__more">
+            <button> LOAD MORE</button>
+        </div>
+
+    </section>
+
+
+    <section id="blog">
+        <h2 class="title">Blog</h2>
+        <div class="blog__posts">
+            <div class="post">
+                <img src="images/travel.jpg">
+                <div class="post__text">
+                    <span>Dec 11, 2020</span>
+                    <h4>Travel Blog Post</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus expedita iste, molestias id minima?</p>
+                    <button>Read more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/coffee.jpg">
+                <div class="post__text">
+                    <span>Dec 11, 2020</span>
+                    <h4>Coffee Blog Post</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus expedita iste, molestias id minima?</p>
+                    <button>Read more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/home.jpg">
+                <div class="post__text">
+                    <span>Dec 11, 2020</span>
+                    <h4>Home Blog Post</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus expedita iste, molestias id minima?</p>
+                    <button>Read more <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="load__more">
+            <button> LOAD MORE</button>
+        </div>
+
+
+    </section>
+
+    <section id="subscribe">
+        <h2 class="title">Sign up for BeBop Store</h2>
+        <p>Get the latest on new products, promotions and inspiration.</p>
+        <form>
+            <input class="subscribe-input" type="email" id="email" placeholder="Email Address">
+            <button class="subscribe" type="submit">subscribe</button>
+        </form>
+    </section>
+
+    <footer th:replace="frontend/footer.html :: myfooter">
+          
+    </footer>
+    
+    
+    <script src="main.js"></script>
+    
+    <script>
+        const slides = document.querySelectorAll('.slide');
+
+        function slideShow(){
+            const active = document.querySelector('.active');
+            active.classList.remove('active')
+            if(active.nextElementSibling){
+                active.nextElementSibling.classList.add('active')
+            }else{
+                slides[0].classList.add('active')
+            }
+
+            setTimeout('slideShow()', 3000)
+        }
+
+        window.onload = slideShow;
+    </script>
+
+
+</body>
+
+
+</html> 

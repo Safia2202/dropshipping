@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head th:replace="frontend/header.html :: myheader">
+
+</head>
+<body>
+
+<div th:replace="frontend/mynav.html :: mynavi"></div>
+<div class="banner-cart">
+    <h2 style="position:absolute;margin-top:45px; margin-left:40%; color:white;"> Shopping cart</h2>
+    <img   src="../images/banner.png" style="width:100%;">
+
+</div>
+
+<div class="main-cart">
+    <div class="row-cart">
+        <div class="cart-6">Product</div>
+        <div class="cart-2 ">Price</div>
+        <div class="cart-2 ">Quantity</div>
+        <div class="cart-2  ">Total</div>
+
+    </div>
+    <hr>
+    <div class="row-cart">
+        <div class="cart-2">
+            <img src="../images/grid7.jpg">
+            <i class="fas fa-trash-alt"></i>
+        </div>
+        <div class="cart-4">
+            <h6> ASOS Slim Fit T-Shirt With Crew Neck </h6>
+        </div>
+
+        <div class="cart-2 "> ¥1200  &nbsp;&nbsp;&nbsp; <del style="color:red"> ¥5000</del></div>
+        <div class="cart-2-quantity ">
+            <i class="fas fa-minus"></i>&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;
+            <i class="fas fa-plus"></i>
+
+        </div>
+        <div class="cart-2  "> ¥1200 &nbsp;&nbsp;&nbsp; <del> ¥5000</del></div>
+
+    </div>
+    <hr>
+    <div class="row-cart">
+        <div class="cart-8"> <strong>Total</strong> </div>
+        <div class="cart-2"> ¥ 1200 <del> ¥5000 </del> <a href="#"> + Shipping fee</a></div>
+    </div>
+    <div class="sub-inf">
+        <div class="column-5">
+            <div class="gift-wrap">
+                <i class="fas fa-gift fa-2x"></i> Do you want a gift wrap <span style="color:red;"><strong>Only 600¥</strong></span>
+                <button> Add gift wrap </button>
+            </div>
+            Add Order note
+            <textarea style="margin:10px 10px 40px 10px;" placeholder=" How can we help you? "></textarea>
+
+            <form action="#">
+                <lable for="coupon" >Coupon: Coupon will work on check out page</lable>
+                <input class= "input-coupon" type="text" id="coupon" name="coupon" placeholder="Input coupon here"></form>
+        </div>
+
+        <div class="column-5">
+            <span style="color:red; float:right;"><strong>Fee Shipping with order from ¥4000 </strong>  </span>
+            <h5 style=" float:right;">Taxes, shipping and discounts codes calculated at checkout</h5>
+            <br>
+            <form action="#">
+                <input  style ="margin-left:322px;" type="checkbox" id="term" name="term">
+                <label style ="float:right" for="term"> I agree with the terms and conditions.</label>
+            </form>
+
+            <button type="submit" class="check-out">Check out</button>
+            <img class="pay-cart" src="../images/pay.png">
+
+        </div>
+
+    </div>
+    <div class="estimate-wrapper">
+        <button class="estimate-text">
+            <h4><strong>Estimate Shipping</strong></span></h4>
+        </button>
+
+        <div class="estimate-address">
+            <form class="column-3" action="#>">
+                <label for="country"> Country</label>
+                <select class="form-country" id="country" name="country" value="Select Country">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Åland Islands">Åland Islands</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                </select>
+            </form>
+            <form class="column-3">
+                <label for="province"> Province</label>
+                <select  class="form-country" id="province" name="province">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Åland Islands">Åland Islands</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                </select>
+            </form>
+            <form class="column-3">
+                <label for="zipcode"> Postal/Zip Code</label>
+                <input class="form-country" id=zipcode type="text" name="zipcode" placeholder ="Postal/Zip Code" value="Postal/Zip Code">
+            </form>
+            <button class="estimate-bnt" > Estimate </button>
+        </div>
+    </div>
+    <div class="estimate-wrapper" style="border:none;margin:50px 0px 0px 0px;">
+        <button class="estimate-text">
+            <h4><strong>More Items</strong></span></h4>
+        </button>
+    <div class="card-cart">
+
+
+
+        <div th:insert="frontend/card::card"></div>
+        <div th:insert="frontend/card::card"></div>
+        <div th:insert="frontend/card::card"></div>
+        <div th:insert="frontend/card::card"></div>
+        <div th:insert="frontend/card::card"></div>
+
+
+    </div>
+
+</div>
+</div>
+
+<div class="check-term">
+    <i class="fas fa-exclamation-triangle"></i> &nbsp;&nbsp;
+    <h6> You must agree with the terms and conditions of sales to check out.</h6>
+    <i class="far fa-times-circle"></i>
+</div>
+
+<footer th:replace="frontend/footer.html :: myfooter"></footer>
+</body>
+
+</html>

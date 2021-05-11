@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Admin - Dashboard HTML Template</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <!-- https://fonts.google.com/specimen/Roboto -->
+  <link rel="stylesheet" href="css/admin/fontawesome.min.css" />
+  <!-- https://fontawesome.com/ -->
+  <link rel="stylesheet" href="js/query/jquery-ui.min.css" type="text/css" />
+  <!-- http://api.jqueryui.com/datepicker/ -->
+  <link rel="stylesheet" href="css/admin/bootstrap.min.css" />
+  <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/admin/templatemo-style.css">
+  <!--
+
+  Product Admin CSS Template
+  https://templatemo.com/tm-524-product-admin
+  -->
+</head>
+<body>
+<nav th:insert="admin/nav.html::nav"></nav>
+<div class="container tm-mt-big tm-mb-big">
+  <div class="row">
+    <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+      <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="tm-block-title d-inline-block">Edit Product</h2>
+          </div>
+        </div>
+        <div class="row tm-edit-product-row">
+          <div class="col-xl-6 col-lg-6 col-md-12">
+            <form action="" class="tm-edit-product-form">
+              <div class="form-group mb-3">
+                <label
+                        for="name"
+                >Product Name
+                </label>
+                <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        class="form-control validate"
+                        required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="description1">Description 1</label>
+                <textarea id="description1" class="form-control validate" rows="3" required></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="description2">Description 2</label>
+                <textarea id="description2" class="form-control validate" rows="3" required></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="description3">Description 3</label>
+                <textarea id="description3" class="form-control validate" rows="3" required></textarea>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="description4">Description 4</label>
+                <textarea id="description4" class="form-control validate" rows="3" required></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="description5">Description 5</label>
+                <textarea id="description5" class="form-control validate" rows="3" required></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="description5">Description 6</label>
+                <textarea id="description5" class="form-control validate" rows="3" required></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="description7">Description 7</label>
+                <textarea id="description7" class="form-control validate" rows="3" required></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="description8">Description 8</label>
+                <textarea id="description8" class="form-control validate" rows="3" required></textarea>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="description9">Description 9</label>
+                <textarea id="description9" class="form-control validate" rows="3" required></textarea>
+              </div>
+
+
+              <div class="form-group mb-3">
+                <label
+                        for="Tag"
+                >Tag</label
+                >
+                <select
+                        class="custom-select tm-select-accounts"
+                        id="tag"
+                >
+                  <option selected>Select Tag</option>
+                  <option value="1">New Arrival</option>
+                  <option value="1">Sale Off</option>
+                  <option value="2">Most Popular</option>
+                  <option value="3">Trending</option>
+                </select>
+              </div>
+              <div class="form-group mb-3">
+                <label
+                        for="categories"
+                >Category</label
+                >
+                <select
+                        class="custom-select tm-select-accounts"
+                        id="categories"
+                >
+                  <option selected>Select category</option>
+                  <option value="1">Cloth</option>
+                  <option value="2">Electronics</option>
+                  <option value="3">Home</option>
+                  <option value="4">Sport</option>
+                  <option value="5">Automobile</option>
+                  <option value="6">phone Accessory</option>
+                  <option value="7">Gardening</option>
+                  <option value="8">Bag</option>
+                  <option value="9">Sex Toy</option>
+                  <option value="10">Bag</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label
+                          for="expire_date"
+                  >Expire Date
+                  </label>
+                  <input
+                          id="expire_date"
+                          name="expire_date"
+                          type="text"
+                          class="form-control validate"
+                          data-large-mode="true"
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label
+                          for="stock"
+                  >Units In Stock
+                  </label>
+                  <input
+                          id="stock"
+                          name="stock"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label
+                          for="buy-price"
+                  >Buy price
+                  </label>
+                  <input
+                          id="buy-price"
+                          name="buy-price"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="sell-price">sell price</label>
+                  <input
+                          id="sell-price"
+                          name="sell-price"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="sell-price">sell price</label>
+                  <input
+                          id="sell-price"
+                          name="sell-price"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="delivery-fee">Delivery</label>
+                  <input
+                          id="delivery-fee"
+                          name="delivery-fee"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="model">Model Number</label>
+                  <input
+                          id="model"
+                          name="model"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="maker">Maker</label>
+                  <input
+                          id="maker"
+                          name="maker"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="type">type</label>
+                  <input
+                          id="type"
+                          name="type"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size1">size1</label>
+                  <input
+                          id="size1"
+                          name="size1"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size2">size2</label>
+                  <input
+                          id="size2"
+                          name="size2"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size3">size3</label>
+                  <input
+                          id="size3"
+                          name="size3"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size4">size4</label>
+                  <input
+                          id="size4"
+                          name="size4"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size5">size5</label>
+                  <input
+                          id="size5"
+                          name="size5"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size6">size6</label>
+                  <input
+                          id="size6"
+                          name="size6"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size7">size7</label>
+                  <input
+                          id="size7"
+                          name="size7"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size8">size8</label>
+                  <input
+                          id="size8"
+                          name="size8"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size9">size9</label>
+                  <input
+                          id="size9"
+                          name="size9"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size10">size10</label>
+                  <input
+                          id="size10"
+                          name="size10"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="size11">size11</label>
+                  <input
+                          id="size11"
+                          name="size11"
+                          type="text  "
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="weight">weight</label>
+                  <input
+                          id="weight"
+                          name="weight"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+                <div class="form-group mb-3 col-xs-12 col-sm-6">
+                  <label for="guaranty">guaranty</label>
+                  <input
+                          id="guaranty"
+                          name="guaranty"
+                          type="text"
+                          class="form-control validate"
+                          required
+                  />
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput1').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput1" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 1"
+                      onclick="document.getElementById('fileInput2').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput2').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput2" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 2"
+                      onclick="document.getElementById('fileInput2').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput3').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput3" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 3"
+                      onclick="document.getElementById('fileInput3').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput4').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput4" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 4"
+                      onclick="document.getElementById('fileInput4').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput5').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput5" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 5"
+                      onclick="document.getElementById('fileInput5').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput6').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput6" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 6"
+                      onclick="document.getElementById('fileInput6').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput7').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput7" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 7"
+                      onclick="document.getElementById('fileInput7').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput8').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput8" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 8"
+                      onclick="document.getElementById('fileInput8').click();"
+              />
+            </div>
+
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput9').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput9" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 9"
+                      onclick="document.getElementById('fileInput9').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput9').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileInput9" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE 9"
+                      onclick="document.getElementById('fileInput9').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor1').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor1" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 1"
+                      onclick="document.getElementById('fileColor1').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor2').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor2" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 2"
+                      onclick="document.getElementById('fileColor2').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor3').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor3" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 3"
+                      onclick="document.getElementById('fileColor3').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor4').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor4" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 4"
+                      onclick="document.getElementById('fileColor4').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor5').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor5" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 5"
+                      onclick="document.getElementById('fileColor5').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor6').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor6" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 6"
+                      onclick="document.getElementById('fileColor6').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor7').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor7" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 7"
+                      onclick="document.getElementById('fileColor7').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor8').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor8" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 8"
+                      onclick="document.getElementById('fileColor8').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor9').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor9" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 9"
+                      onclick="document.getElementById('fileColor9').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor10').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor10" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 10"
+                      onclick="document.getElementById('fileColor10').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor11').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor11" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 11"
+                      onclick="document.getElementById('fileColor11').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor12').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor12" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 12"
+                      onclick="document.getElementById('fileColor12').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor13').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor13" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 13"
+                      onclick="document.getElementById('fileColor13').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor14').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor14" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 14"
+                      onclick="document.getElementById('fileColor14').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor15').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor15" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 15"
+                      onclick="document.getElementById('fileColor15').click();"
+              />
+            </div>
+            <div class="tm-product-img-dummy mx-auto">
+              <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileColor16').click();"
+              ></i>
+            </div>
+            <div class="custom-file mt-3 mb-3">
+              <input id="fileColor16" type="file" style="display:none;" />
+              <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT COLOR 16"
+                      onclick="document.getElementById('fileColor16').click();"
+              />
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-block text-uppercase">Edit Product Now</button>
+          </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="tm-footer row tm-mt-small">
+  <div class="col-12 font-weight-light">
+    <p class="text-center text-white mb-0 px-4 small">
+      Copyright &copy <b>2018</b> All rights reserved.
+
+
+
+    </p>
+  </div>
+</footer>
+
+<script src="js/admin/jquery-3.3.1.min.js"></script>
+<!-- https://jquery.com/download/ -->
+<script src="js/admin/jquery/jquery-ui.min.js"></script>
+<!-- https://jqueryui.com/download/ -->
+<script src="js/admin/bootstrap.min.js"></script>
+<!-- https://getbootstrap.com/ -->
+<script>
+      $(function() {
+        $("#expire_date").datepicker();
+      });
+    </script>
+</body>
+</html>
