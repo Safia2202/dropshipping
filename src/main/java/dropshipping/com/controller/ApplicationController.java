@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
-@Controller
+@RestController
 public class ApplicationController {
     @Autowired
-    private ProductService service;
+    private ProductService productService;
 
     @Autowired
     @GetMapping("")
@@ -24,46 +24,46 @@ public class ApplicationController {
     @Autowired
     @RequestMapping("/detail")
     public String productDetail(Model model){
-        List<Product> listProducts = service.listAll();
+        List<Product> listProducts = productService.listAll();
         model.addAttribute("listProducts",listProducts);
 
         return "frontend/detail";}
 
-    @Autowired
-    @GetMapping("/cart")
-    public String cartDetail(){
-        return "frontend/cart";}
-
-    @Autowired
-    @GetMapping("/checkout")
-    public String checkOut(){
-        return "frontend/checkout";}
-
-//admin
-    @Autowired
-    @GetMapping("admin")
-    public String adminAdmin(){
-        return "admin/index";}
-
-    @Autowired
-    @GetMapping("account")
-    public String adminAccount(){
-        return "admin/account";}
-    @Autowired
-    @GetMapping("addproduct")
-    public String adminAddProduct(){
-        return "admin/add-product";}
-    @Autowired
-    @GetMapping("editproduct")
-    public String adminEditProduct(){
-        return "admin/edit-product";}
-    @GetMapping("/login")
-    public String adminLogin(){
-        return "admin/login";}
-    @GetMapping("products")
-    public String adminProducts(){
-        return "admin/products";}
-
+//    @Autowired
+//    @GetMapping("/cart")
+//    public String cartDetail(){
+//        return "frontend/cart";}
+//
+//    @Autowired
+//    @GetMapping("/checkout")
+//    public String checkOut(){
+//        return "frontend/checkout";}
+//
+////admin
+//    @Autowired
+//    @GetMapping("admin")
+//    public String adminAdmin(){
+//        return "admin/index";}
+//
+//    @Autowired
+//    @GetMapping("account")
+//    public String adminAccount(){
+//        return "admin/account";}
+//    @Autowired
+//    @GetMapping("addproduct")
+//    public String adminAddProduct(){
+//        return "admin/add-product";}
+//    @Autowired
+//    @GetMapping("editproduct")
+//    public String adminEditProduct(){
+//        return "admin/edit-product";}
+//    @GetMapping("/login")
+//    public String adminLogin(){
+//        return "admin/login";}
+//    @GetMapping("products")
+//    public String adminProducts(){
+//        return "admin/products";}
+//
 
 
 }

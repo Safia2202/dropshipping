@@ -14,14 +14,13 @@ import java.util.List;
 
 @Service
 @Component
-@ComponentScan("dropshipping.com")
+@ComponentScan("dropshipping.com.repository")
 public class ProductService {
 
     @Autowired
     private ProductRepository repo;
 
-    public List<Product> listAll(){
-        return repo.findAll();
+    public List<Product> listAll(){ return repo.findAll();
     }
     public void save(Product product){
          repo.save(product);
