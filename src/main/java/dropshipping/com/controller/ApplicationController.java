@@ -11,30 +11,29 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
-@RestController
+@Controller
 public class ApplicationController {
     @Autowired
     private ProductService productService;
 
-    @Autowired
+
     @GetMapping("")
     public String viewHowPage(){
         return "frontend/index";}
 
-    @Autowired
-    @RequestMapping("/detail")
+    @GetMapping("/products")
     public String productDetail(Model model){
         List<Product> listProducts = productService.listAll();
         model.addAttribute("listProducts",listProducts);
 
-        return "frontend/detail";}
+        return "admin/products";}
 
-//    @Autowired
+//
 //    @GetMapping("/cart")
 //    public String cartDetail(){
 //        return "frontend/cart";}
 //
-//    @Autowired
+//
 //    @GetMapping("/checkout")
 //    public String checkOut(){
 //        return "frontend/checkout";}
